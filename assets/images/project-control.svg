@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 510" role="img" aria-labelledby="title">
+  <title id="title">نمودار مفهومی سیستم کنترل و پاسخ زمانی</title>
+  <rect width="900" height="510" fill="#e7ebe5"/>
+  <rect x="75" y="61" width="750" height="388" rx="10" fill="#fafbf8" stroke="#d7ded5" stroke-width="2"/>
+  <text x="111" y="105" fill="#536454" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">CONTROL SYSTEM RESPONSE</text>
+  <g stroke="#e2e7e0" stroke-width="2"><path d="M153 157h610M153 211h610M153 265h610M153 319h610M153 373h610"/><path d="M214 141v256m122-256v256m122-256v256m122-256v256m122-256v256"/></g>
+  <path d="M153 373h610M153 373V146" fill="none" stroke="#879588" stroke-width="2"/>
+  <path d="M164 362c44-2 63-6 90-30s31-77 64-98 57-20 82-4 37 42 65 48 56 6 81 1 42-3 65-2 42 2 69 1 48 0 70 0" fill="none" stroke="#608267" stroke-width="5" stroke-linecap="round"/>
+  <path d="M164 362h568" fill="none" stroke="#b4c0b3" stroke-width="3" stroke-dasharray="7 8"/>
+  <circle cx="318" cy="234" r="7" fill="#608267"/><circle cx="465" cy="278" r="7" fill="#608267"/>
+  <rect x="567" y="112" width="191" height="55" rx="6" fill="#eef2ec"/>
+  <circle cx="591" cy="139" r="6" fill="#608267"/>
+  <text x="609" y="143" fill="#627263" font-family="Arial,sans-serif" font-size="11">Closed-loop response</text>
+  <g fill="#89968a" font-family="Arial,sans-serif" font-size="10"><text x="149" y="416">0</text><text x="328" y="416">2</text><text x="572" y="416">6</text><text x="744" y="416">10 s</text><text x="111" y="161">1.0</text><text x="111" y="269">0.5</text></g>
+  <rect x="690" y="304" width="77" height="42" rx="5" fill="#dfe8dc"/>
+  <text x="708" y="330" fill="#557258" font-family="Arial,sans-serif" font-size="12">PID</text>
+</svg>

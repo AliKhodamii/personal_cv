@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" role="img" aria-labelledby="title desc">
+  <title id="title">نمای داشبورد سامانهٔ آبیاری هوشمند</title>
+  <desc id="desc">موکاپ صفحهٔ خانهٔ داشبورد، شامل رطوبت خاک، وضعیت حسگرها، نمودار هفتگی و زمان‌بندی آبیاری.</desc>
+  <rect width="1100" height="660" fill="#e5eae1"/>
+  <rect x="70" y="46" width="960" height="568" rx="18" fill="#f8f9f6" stroke="#d4dbd1" stroke-width="2"/>
+  <rect x="70" y="46" width="960" height="62" rx="18" fill="#fff"/>
+  <path d="M70 108h960" stroke="#e5e9e2" stroke-width="2"/>
+  <circle cx="101" cy="77" r="7" fill="#92a08e"/><circle cx="122" cy="77" r="7" fill="#c4c9c0"/><circle cx="143" cy="77" r="7" fill="#c4c9c0"/>
+  <rect x="175" y="64" width="609" height="26" rx="6" fill="#f1f3ef"/>
+  <text x="197" y="82" fill="#788176" font-family="Arial,sans-serif" font-size="11">garden.local / dashboard</text>
+  <rect x="70" y="108" width="185" height="506" fill="#f0f3ee"/>
+  <circle cx="104" cy="147" r="14" fill="#57745d"/>
+  <path d="M97 148h14m-7-7v14" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="128" y="152" fill="#354439" font-family="Arial,sans-serif" font-size="14" font-weight="600">سبزینه</text>
+  <text x="96" y="202" fill="#8d958a" font-family="Arial,sans-serif" font-size="10">داشبورد</text>
+  <rect x="86" y="216" width="153" height="40" rx="7" fill="#dce7d9"/>
+  <circle cx="108" cy="236" r="4" fill="#54775a"/>
+  <text x="124" y="240" fill="#405943" font-family="Arial,sans-serif" font-size="11" font-weight="600">نمای کلی</text>
+  <g fill="#788276" font-family="Arial,sans-serif" font-size="11">
+    <circle cx="108" cy="281" r="4" fill="#9ea89a"/><text x="124" y="285">حسگرها</text>
+    <circle cx="108" cy="324" r="4" fill="#9ea89a"/><text x="124" y="328">زمان‌بندی آبیاری</text>
+    <circle cx="108" cy="367" r="4" fill="#9ea89a"/><text x="124" y="371">گزارش‌ها</text>
+    <circle cx="108" cy="410" r="4" fill="#9ea89a"/><text x="124" y="414">تنظیمات</text>
+  </g>
+  <path d="M91 455h142" stroke="#dce1d9"/>
+  <circle cx="108" cy="488" r="13" fill="#dce7d9"/>
+  <path d="M103 490c3-8 9-11 14-12m-11 13c-4-4-8-4-11-3" fill="none" stroke="#658065" stroke-width="2" stroke-linecap="round"/>
+  <text x="130" y="486" fill="#586457" font-family="Arial,sans-serif" font-size="10">باغچهٔ خانه</text>
+  <text x="130" y="501" fill="#9aa197" font-family="Arial,sans-serif" font-size="9">۳ ناحیه فعال</text>
+  <text x="284" y="151" fill="#313b32" font-family="Arial,sans-serif" font-size="21" font-weight="600">سلام، روز بخیر</text>
+  <text x="284" y="174" fill="#8b9389" font-family="Arial,sans-serif" font-size="11">وضعیت امروز باغچه را اینجا ببینید.</text>
+  <rect x="871" y="130" width="122" height="34" rx="6" fill="#fff" stroke="#e0e5de"/>
+  <text x="888" y="151" fill="#717a70" font-family="Arial,sans-serif" font-size="10">این هفته ▾</text>
+  <rect x="284" y="198" width="218" height="115" rx="9" fill="#fff" stroke="#e3e7e1"/>
+  <text x="302" y="224" fill="#8b9389" font-family="Arial,sans-serif" font-size="10">میانگین رطوبت خاک</text>
+  <text x="302" y="268" fill="#34483a" font-family="Arial,sans-serif" font-size="33" font-weight="600">۴۲٪</text>
+  <rect x="302" y="285" width="177" height="7" rx="4" fill="#edf0eb"/>
+  <rect x="302" y="285" width="81" height="7" rx="4" fill="#66866b"/>
+  <circle cx="465" cy="244" r="15" fill="#edf3ea"/>
+  <path d="M465 236c-8 10-7 15 0 20 7-5 8-10 0-20Z" fill="#719174"/>
+  <rect x="517" y="198" width="218" height="115" rx="9" fill="#fff" stroke="#e3e7e1"/>
+  <text x="535" y="224" fill="#8b9389" font-family="Arial,sans-serif" font-size="10">حسگرهای فعال</text>
+  <text x="535" y="268" fill="#34483a" font-family="Arial,sans-serif" font-size="33" font-weight="600">۳ از ۳</text>
+  <circle cx="690" cy="245" r="15" fill="#edf3ea"/>
+  <path d="m683 245 5 5 10-11" fill="none" stroke="#66866b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="535" y="291" fill="#7e8b7e" font-family="Arial,sans-serif" font-size="9">همهٔ دستگاه‌ها متصل‌اند</text>
+  <rect x="750" y="198" width="243" height="115" rx="9" fill="#fff" stroke="#e3e7e1"/>
+  <text x="768" y="224" fill="#8b9389" font-family="Arial,sans-serif" font-size="10">نوبت بعدی آبیاری</text>
+  <text x="768" y="264" fill="#34483a" font-family="Arial,sans-serif" font-size="22" font-weight="600">امروز، ۱۸:۳۰</text>
+  <text x="768" y="291" fill="#7e8b7e" font-family="Arial,sans-serif" font-size="9">ناحیهٔ سبزی‌کاری</text>
+  <rect x="284" y="333" width="449" height="235" rx="9" fill="#fff" stroke="#e3e7e1"/>
+  <text x="305" y="361" fill="#414b41" font-family="Arial,sans-serif" font-size="12" font-weight="600">تغییرات رطوبت خاک</text>
+  <text x="305" y="380" fill="#9aa197" font-family="Arial,sans-serif" font-size="9">۷ روز گذشته</text>
+  <g stroke="#edf0eb" stroke-width="1.5">
+    <path d="M334 413h365M334 450h365M334 487h365M334 524h365"/>
+    <path d="M355 398v145M420 398v145M485 398v145M550 398v145M615 398v145M680 398v145"/>
+  </g>
+  <path d="M345 487c32-8 39-12 65-3s42-27 66-18 42 7 63-19 41 4 65-9 40 18 61 5 33-6 45-16" fill="none" stroke="#618367" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#618367"><circle cx="410" cy="484" r="4"/><circle cx="476" cy="466" r="4"/><circle cx="539" cy="447" r="4"/><circle cx="604" cy="438" r="4"/><circle cx="645" cy="443" r="4"/></g>
+  <g fill="#9aa197" font-family="Arial,sans-serif" font-size="9"><text x="347" y="555">شنبه</text><text x="412" y="555">یکشنبه</text><text x="478" y="555">دوشنبه</text><text x="544" y="555">سه‌شنبه</text><text x="611" y="555">چهارشنبه</text><text x="675" y="555">پنجشنبه</text></g>
+  <rect x="750" y="333" width="243" height="235" rx="9" fill="#fff" stroke="#e3e7e1"/>
+  <text x="768" y="361" fill="#414b41" font-family="Arial,sans-serif" font-size="12" font-weight="600">وضعیت ناحیه‌ها</text>
+  <g font-family="Arial,sans-serif">
+    <circle cx="782" cy="402" r="13" fill="#edf3ea"/><path d="M778 404c4-8 8-9 12-11m-9 12c-3-3-5-4-8-3" fill="none" stroke="#67846b" stroke-width="1.5"/>
+    <text x="805" y="400" fill="#4e594e" font-size="10" font-weight="600">سبزی‌کاری</text><text x="805" y="416" fill="#929a90" font-size="9">رطوبت ۴۲٪</text><circle cx="967" cy="404" r="4" fill="#70a078"/>
+    <path d="M768 432h207" stroke="#edf0eb"/>
+    <circle cx="782" cy="458" r="13" fill="#edf3ea"/><path d="M778 460c4-8 8-9 12-11m-9 12c-3-3-5-4-8-3" fill="none" stroke="#67846b" stroke-width="1.5"/>
+    <text x="805" y="456" fill="#4e594e" font-size="10" font-weight="600">گلدان‌های تراس</text><text x="805" y="472" fill="#929a90" font-size="9">رطوبت ۵۸٪</text><circle cx="967" cy="460" r="4" fill="#70a078"/>
+    <path d="M768 488h207" stroke="#edf0eb"/>
+    <circle cx="782" cy="514" r="13" fill="#edf3ea"/><path d="M778 516c4-8 8-9 12-11m-9 12c-3-3-5-4-8-3" fill="none" stroke="#67846b" stroke-width="1.5"/>
+    <text x="805" y="512" fill="#4e594e" font-size="10" font-weight="600">درخت‌های حیاط</text><text x="805" y="528" fill="#929a90" font-size="9">رطوبت ۳۶٪</text><circle cx="967" cy="516" r="4" fill="#70a078"/>
+  </g>
+</svg>

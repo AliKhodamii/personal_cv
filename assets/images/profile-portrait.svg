@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 760" role="img" aria-labelledby="title desc">
+  <title id="title">پیوند اتوماسیون، سخت‌افزار و وب</title>
+  <desc id="desc">تصویرسازی شماتیک از کنترل‌گر صنعتی، حسگر و داشبورد نرم‌افزاری.</desc>
+  <rect width="700" height="760" fill="#e5ebe3"/>
+  <circle cx="570" cy="142" r="102" fill="#d4dfd1"/>
+  <circle cx="142" cy="620" r="128" fill="#d5e0d2"/>
+  <path d="M0 537c119-53 194-66 318-42s256 42 382-7v272H0Z" fill="#dce5d9"/>
+  <g fill="none" stroke="#91a994" stroke-width="3">
+    <path d="M149 316h103m164 0h91M250 252v128m164-128v128M332 383v93"/>
+    <path d="M179 540v-55h153m83 0h118v55"/>
+    <circle cx="149" cy="316" r="7" fill="#f7f8f5"/><circle cx="507" cy="316" r="7" fill="#f7f8f5"/>
+    <circle cx="179" cy="540" r="7" fill="#f7f8f5"/><circle cx="554" cy="540" r="7" fill="#f7f8f5"/>
+  </g>
+  <rect x="211" y="197" width="278" height="210" rx="12" fill="#fafbf8" stroke="#c6d3c5" stroke-width="3"/>
+  <rect x="233" y="219" width="234" height="34" rx="5" fill="#eaf0e8"/>
+  <circle cx="252" cy="236" r="6" fill="#628269"/>
+  <path d="M269 236h93" stroke="#98a99a" stroke-width="5" stroke-linecap="round"/>
+  <rect x="233" y="269" width="89" height="110" rx="6" fill="#eef2eb"/>
+  <rect x="333" y="269" width="134" height="110" rx="6" fill="#f1f4ef"/>
+  <text x="250" y="295" fill="#728675" font-family="Arial,sans-serif" font-size="10">PLC</text>
+  <g fill="#86a08a"><rect x="250" y="307" width="15" height="8" rx="2"/><rect x="274" y="307" width="15" height="8" rx="2"/><rect x="250" y="323" width="15" height="8" rx="2"/><rect x="274" y="323" width="15" height="8" rx="2"/></g>
+  <path d="M350 354c16-25 28 3 43-21s26 7 43-25" fill="none" stroke="#628269" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#78977d"><circle cx="350" cy="354" r="4"/><circle cx="393" cy="333" r="4"/><circle cx="436" cy="308" r="4"/></g>
+  <rect x="85" y="483" width="187" height="128" rx="10" fill="#f8faf6" stroke="#c8d5c6" stroke-width="3"/>
+  <path d="M178 503c-23 29-22 48 0 63 22-15 23-34 0-63Z" fill="#a8bd9e"/>
+  <path d="M178 528v32m0-20-17-11m17 17 17-13" fill="none" stroke="#66836a" stroke-width="4" stroke-linecap="round"/>
+  <text x="122" y="585" fill="#687c69" font-family="Arial,sans-serif" font-size="11">SOIL SENSOR</text>
+  <rect x="417" y="483" width="197" height="128" rx="10" fill="#f8faf6" stroke="#c8d5c6" stroke-width="3"/>
+  <rect x="440" y="506" width="151" height="78" rx="5" fill="#edf2e9"/>
+  <path d="M456 563h120M456 546h120M456 529h120" stroke="#d7e1d3" stroke-width="2"/>
+  <path d="M458 558c20-3 23-25 42-18s21 7 38-7 23 6 39-14" fill="none" stroke="#66866c" stroke-width="4" stroke-linecap="round"/>
+  <text x="466" y="600" fill="#687c69" font-family="Arial,sans-serif" font-size="10">WEB DASHBOARD</text>
+  <path d="M350 449v19m-14 0h28" stroke="#708b74" stroke-width="4" stroke-linecap="round"/>
+</svg>

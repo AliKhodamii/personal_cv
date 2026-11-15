@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 510" role="img" aria-labelledby="title">
+  <title id="title">طرح مفهومی برد مدار چاپی برای سخت‌افزار نهفته</title>
+  <rect width="900" height="510" fill="#e5ebe3"/>
+  <g transform="rotate(-5 450 255)">
+    <rect x="200" y="68" width="514" height="373" rx="18" fill="#637f68"/>
+    <rect x="219" y="87" width="476" height="335" rx="12" fill="#718d74"/>
+    <g fill="none" stroke="#b3c9a7" stroke-width="5">
+      <path d="M263 162h111v62h89m133-54h-61v76h-72m-199 114h90v-54h77m212 56h-80v-67h-76"/>
+      <path d="M273 281h72v-40h72m187-84v-29h-44m-48 222v-42h-55"/>
+      <path d="M540 162h82v-39h37m-388 163v89h49"/>
+    </g>
+    <g fill="#d3dcae" stroke="#607c64" stroke-width="4">
+      <circle cx="263" cy="162" r="9"/><circle cx="374" cy="162" r="9"/><circle cx="463" cy="224" r="9"/>
+      <circle cx="535" cy="170" r="9"/><circle cx="463" cy="284" r="9"/><circle cx="670" cy="122" r="9"/>
+      <circle cx="273" cy="281" r="9"/><circle cx="345" cy="241" r="9"/><circle cx="417" cy="241" r="9"/>
+      <circle cx="624" cy="356" r="9"/><circle cx="544" cy="356" r="9"/><circle cx="470" cy="289" r="9"/>
+    </g>
+    <rect x="389" y="174" width="151" height="144" rx="8" fill="#d1d8c7"/>
+    <rect x="405" y="190" width="119" height="112" rx="5" fill="#3f5544"/>
+    <text x="422" y="251" fill="#dfe8d9" font-family="Arial,sans-serif" font-size="20" font-weight="600">MCU</text>
+    <g fill="#d8d5bd"><rect x="418" y="166" width="7" height="12"/><rect x="437" y="166" width="7" height="12"/><rect x="456" y="166" width="7" height="12"/><rect x="475" y="166" width="7" height="12"/><rect x="494" y="166" width="7" height="12"/><rect x="418" y="318" width="7" height="12"/><rect x="437" y="318" width="7" height="12"/><rect x="456" y="318" width="7" height="12"/><rect x="475" y="318" width="7" height="12"/><rect x="494" y="318" width="7" height="12"/></g>
+    <rect x="263" y="208" width="72" height="44" rx="5" fill="#c6d2bd"/>
+    <text x="278" y="236" fill="#506653" font-family="Arial,sans-serif" font-size="12">SENSOR</text>
+    <rect x="567" y="264" width="92" height="53" rx="5" fill="#c6d2bd"/>
+    <text x="588" y="296" fill="#506653" font-family="Arial,sans-serif" font-size="12">POWER</text>
+  </g>
+  <circle cx="230" cy="99" r="7" fill="#d5dfd1"/><circle cx="682" cy="420" r="7" fill="#d5dfd1"/>
+</svg>

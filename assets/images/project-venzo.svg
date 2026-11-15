@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 510" role="img" aria-labelledby="title">
+  <title id="title">پیش‌نمایش وب‌سایت کاتالوگ مبلمان ونزو</title>
+  <rect width="900" height="510" fill="#eae7df"/>
+  <rect x="67" y="45" width="766" height="420" rx="10" fill="#fbfaf7" stroke="#dad7cf" stroke-width="2"/>
+  <rect x="67" y="45" width="766" height="49" rx="10" fill="#f1efe9"/>
+  <circle cx="90" cy="69" r="4" fill="#c8c4ba"/><circle cx="105" cy="69" r="4" fill="#c8c4ba"/><circle cx="120" cy="69" r="4" fill="#c8c4ba"/>
+  <text x="132" y="166" fill="#685e51" font-family="Georgia,serif" font-size="37" letter-spacing="4">VENZO</text>
+  <text x="135" y="193" fill="#9a9184" font-family="Arial,sans-serif" font-size="10" letter-spacing="2">FURNITURE WORKSHOP</text>
+  <g fill="#786b5d" font-family="Arial,sans-serif" font-size="11"><text x="574" y="164">COLLECTION</text><text x="681" y="164">OUR WORKSHOP</text><text x="784" y="164">CONTACT</text></g>
+  <path d="M133 217h628" stroke="#dedbd3"/>
+  <text x="135" y="269" fill="#45423b" font-family="Georgia,serif" font-size="27">Made for the way you live.</text>
+  <text x="135" y="296" fill="#928b7f" font-family="Arial,sans-serif" font-size="12">Furniture designed and built with care in our local workshop.</text>
+  <rect x="135" y="322" width="139" height="34" rx="3" fill="#625b4f"/>
+  <text x="157" y="344" fill="#fff" font-family="Arial,sans-serif" font-size="10">EXPLORE COLLECTION</text>
+  <rect x="495" y="207" width="266" height="225" rx="5" fill="#e7e0d4"/>
+  <rect x="523" y="236" width="214" height="124" rx="5" fill="#d1c6b4"/>
+  <path d="M536 315h188l-14 62H550Z" fill="#a88969"/>
+  <path d="M552 376v36m158-36v36" stroke="#6f6251" stroke-width="8" stroke-linecap="round"/>
+  <path d="M582 236v-37m89 37v-37m-88 0h89" stroke="#9b8d78" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="700" cy="238" r="16" fill="#8ea180"/>
+  <path d="M692 249c-13-17-5-27 7-31 11 15 9 23-7 31Z" fill="#71866a"/>
+  <rect x="493" y="390" width="271" height="20" rx="4" fill="#d7cdbd"/>
+</svg>
