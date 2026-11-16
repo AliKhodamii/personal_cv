@@ -1,13 +1,19 @@
 (() => {
-  const header = document.querySelector(".site-header");
+  const root = document.documentElement;
+  root.classList.add("js-views");
+
+  const views = Array.from(document.querySelectorAll(".view"));
+  const navLinks = Array.from(
+    document.querySelectorAll('.primary-nav a[href^="#"]')
+  );
+  const viewAnchors = Array.from(
+    document.querySelectorAll('a[href^="#"]')
+  ).filter((a) => views.some((v) => v.id === a.getAttribute("href").slice(1)));
   const menuToggle = document.querySelector(".menu-toggle");
   const navigation = document.querySelector(".primary-nav");
   const backToTop = document.querySelector(".back-to-top-floating");
   const contactForm = document.querySelector("#contact-form");
   const formStatus = document.querySelector("#form-status");
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  document.documentElement.classList.add("js-ready");
 
   const closeMenu = () => {
     menuToggle.setAttribute("aria-expanded", "false");
@@ -16,6 +22,35 @@
     document.body.classList.remove("menu-open");
   };
 
+  const currentId = () => {
+    const hash = decodeURIComponent(location.hash.slice(1));
+    return views.some((v) => v.id === hash) ? hash : "home";
+  };
+
+  const showView = (id) => {
+    views.forEach((v) => {
+      const active = v.id === id;
+      v.classList.toggle("is-active", active);
+      v.setAttribute("aria-hidden", String(!active));
+    });
+
+    navLinks.forEach((a) => {
+      if (a.getAttribute("href") === "#" + id) {
+        a.setAttribute("aria-current", "page");
+      } else {
+        a.removeAttribute("aria-current");
+      }
+    });
+
+    try {
+      window.scrollTo({ top: 0, behavior: "instant" });
+    } catch (_) {
+      window.scrollTo(0, 0);
+    }
+    closeMenu();
+  };
+
+  // Mobile menu toggle
   menuToggle.addEventListener("click", () => {
     const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
     menuToggle.setAttribute("aria-expanded", String(!isOpen));
@@ -24,42 +59,54 @@
     document.body.classList.toggle("menu-open", !isOpen);
   });
 
-  navigation.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") {
+    if (
+      event.key === "Escape" &&
+      menuToggle.getAttribute("aria-expanded") === "true"
+    ) {
       closeMenu();
       menuToggle.focus();
     }
   });
 
-  const updateScrollState = () => {
-    header.classList.toggle("is-scrolled", window.scrollY > 12);
+  // Panel switching (no-JS keeps anchors working natively)
+  viewAnchors.forEach((a) => {
+    a.addEventListener("click", (event) => {
+      const id = a.getAttribute("href").slice(1);
+      event.preventDefault();
+      if (location.hash !== "#" + id) {
+        try {
+          history.pushState(null, "", "#" + id);
+        } catch (_) {
+          location.hash = id;
+        }
+      }
+      showView(id);
+    });
+  });
+
+  window.addEventListener("hashchange", () => showView(currentId()));
+  window.addEventListener("popstate", () => showView(currentId()));
+
+  // "Back to top" links scroll up without leaving the current view
+  document.querySelectorAll('a[href="#top"]').forEach((a) => {
+    a.addEventListener("click", (event) => {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+
+  // Init
+  showView(currentId());
+
+  // Floating back-to-top visibility
+  const updateScroll = () => {
     backToTop.classList.toggle("is-visible", window.scrollY > 550);
   };
-  updateScrollState();
-  window.addEventListener("scroll", updateScrollState, { passive: true });
+  updateScroll();
+  window.addEventListener("scroll", updateScroll, { passive: true });
 
-  const revealElements = document.querySelectorAll(
-    ".section-heading, .about-copy, .about-facts, .skill-card, .timeline-entry, .project-card, .education-item, .certificate-card, .contact-copy, .contact-form"
-  );
-
-  if ("IntersectionObserver" in window && !reducedMotion) {
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("reveal", "is-visible");
-        observer.unobserve(entry.target);
-      });
-    }, { threshold: 0.12, rootMargin: "0px 0px -35px 0px" });
-
-    revealElements.forEach((element) => {
-      element.classList.add("reveal");
-      revealObserver.observe(element);
-    });
-  } else {
-    revealElements.forEach((element) => element.classList.add("is-visible"));
-  }
-
+  // Contact form -> mail client
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
     if (!contactForm.reportValidity()) return;
@@ -72,6 +119,6 @@
     const body = encodeURIComponent(`${message}\n\nنام: ${name}\nایمیل: ${email}`);
 
     formStatus.textContent = "برنامهٔ ایمیل شما با پیام آماده باز می‌شود…";
-    window.location.href = `mailto:your.email@example.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:s.alikhodami@gmail.com?subject=${subject}&body=${body}`;
   });
 })();

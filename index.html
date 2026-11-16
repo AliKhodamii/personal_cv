@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f7f8f5" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f6f4ef" />
     <meta
       name="description"
       content="سید علی خدامی، مهندس اتوماسیون در ایریسا با تحصیلات مهندسی کنترل؛ علاقه‌مند به توسعهٔ وب، سامانه‌های نهفته و اینترنت اشیا."
@@ -11,14 +12,14 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="سید علی خدامی — مهندس اتوماسیون و توسعه‌دهندهٔ فرانت‌اند"
+      content="سید علی خدامی — مهندس اتوماسیون و توسعه‌دهندهٔ وب"
     />
     <meta
       property="og:description"
       content="تجربهٔ اتوماسیون صنعتی در کنار علاقه به توسعهٔ نرم‌افزار، سامانه‌های نهفته و ساخت محصولات کاربردی."
     />
     <meta property="og:image" content="assets/images/profile-photo.JPG" />
-    <title>سید علی خدامی — مهندس اتوماسیون و توسعه‌دهندهٔ فرانت‌اند</title>
+    <title>سید علی خدامی — مهندس اتوماسیون و توسعه‌دهندهٔ وب</title>
     <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,358 +37,372 @@
   <body>
     <a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
 
-    <header class="site-header" id="top">
-      <div class="header-inner">
-        <a class="wordmark" href="#top" aria-label="علی خدامی، صفحهٔ اصلی"
-          >علی خدامی<span>.</span></a
-        >
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="primary-navigation"
-          aria-label="باز کردن منو"
-        >
-          <span></span><span></span>
-        </button>
+    <div class="app">
+      <header class="rail" id="top">
+        <div class="rail-top">
+          <a class="wordmark" href="#home" aria-label="علی خدامی، صفحهٔ اصلی"
+            >علی خدامی<span>.</span></a
+          >
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            aria-label="باز کردن منو"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+
         <nav
           class="primary-nav"
           id="primary-navigation"
           aria-label="ناوبری اصلی"
         >
-          <a href="#about">دربارهٔ من</a>
-          <a href="#skills">مهارت‌ها</a>
-          <a href="#experience">تجربه</a>
-          <a href="#education">تحصیلات</a>
-          <a href="#projects">نمونه‌کارها</a>
-          <a href="#shop-services">فروشگاه</a>
-          <a href="#timeline">مسیر من</a>
-          <a href="#contact">ارتباط</a>
+          <a class="nav-home" href="#home">خانه</a>
+          <a href="#about"><span class="nav-index">۰۱</span>دربارهٔ من</a>
+          <a href="#education"><span class="nav-index">۰۲</span>تحصیلات</a>
+          <a href="#skills"><span class="nav-index">۰۳</span>مهارت‌ها</a>
+          <a href="#experience"><span class="nav-index">۰۴</span>سوابق شغلی</a>
+          <a href="#projects"><span class="nav-index">۰۵</span>نمونه‌کارها</a>
+          <a href="#shop-services"><span class="nav-index">۰۶</span>خدمات</a>
+          <a href="#timeline"><span class="nav-index">۰۷</span>مسیر من</a>
+          <a href="#certificates"
+            ><span class="nav-index">۰۸</span>گواهی‌نامه‌ها</a
+          >
+          <a href="#contact"><span class="nav-index">۰۹</span>ارتباط</a>
           <a class="nav-resume" href="resume.pdf" download
             >دریافت رزومه
             <i class="fa-solid fa-arrow-down" aria-hidden="true"></i
           ></a>
         </nav>
-      </div>
-    </header>
 
-    <main id="main">
-      <section class="hero section-wrap" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">
-            <span class="status-dot"></span> سید علی خدامی
-            <span class="eyebrow-divider">/</span> اصفهان، ایران
+        <div class="rail-foot">
+          <p class="rail-status">
+            <span class="status-dot" aria-hidden="true"></span> در دسترس برای
+            همکاری
           </p>
-          <h1 id="hero-title">
-            برنامه نویس
-          </h1>
-          <p class="hero-role">
-            اتوماسیون صنعتی <span aria-hidden="true">|</span>طراح سایت فروشگاهی
-            <span aria-hidden="true">|</span>
-            <bdi>اینترنت اشیاء و Embedded Systems</bdi>
-          </p>
-          <p class="hero-intro">
-            مهندس اتوماسیون صنعتی در <bdi>IRISA</bdi>؛ علاقه‌مند به
-            برنامه‌نویسی، تحول دیجیتال و ساخت راهکارهایی که در دنیای واقعی به
-            کار می‌آیند.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-dark" href="#projects"
-              >دیدن پروژه‌ها
-              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i
-            ></a>
-            <a class="button button-outline" href="#shop-services"
-              >طراحی فروشگاه اینترنتی
-              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i
-            ></a>
-          </div>
-          <div class="hero-meta">
-            <span
-              >مهندس اتوماسیون در <strong><bdi>IRISA</bdi></strong></span
-            >
-            <span class="meta-separator" aria-hidden="true"></span>
-            <span>از سال 1403 تاکنون</span>
-          </div>
         </div>
-        <div class="hero-art" aria-label="تصویر سید علی خدامی">
-          <div class="portrait-frame">
-            <img
-              src="assets/images/profile-photo.JPG"
-              alt="عکس سید علی خدامی"
-              fetchpriority="high"
-            />
-            <span class="portrait-note"
-              >صنعت <span>·</span> سخت‌افزار <span>·</span> وب</span
-            >
-          </div>
-          <span class="hero-art-index" aria-hidden="true">مهندسی کنترل</span>
-        </div>
-        <a class="scroll-cue" href="#about"
-          ><span class="scroll-line"></span> ادامهٔ مسیر</a
-        >
-        <span class="hero-side-note" aria-hidden="true"
-          >از مسئلهٔ واقعی تا راهکار قابل‌استفاده</span
-        >
-      </section>
+      </header>
 
-      <section
-        class="about section-wrap section-block"
-        id="about"
-        aria-labelledby="about-title"
-      >
-        <div class="section-heading">
-          <p class="eyebrow">
-            دربارهٔ من <span class="eyebrow-divider">/</span> ۰۱
-          </p>
-          <h2 id="about-title">
-            مهندس کنترل،<br /><span class="serif-accent"
-              >علاقه‌مند به ساختن.</span
-            >
-          </h2>
-        </div>
-        <div class="about-content">
-          <div class="about-copy">
-            <p class="lead">
-              برنامه نویس اتوماسیون صنعتی و علاقه‌مند به توسعهٔ نرم‌افزار.
-            </p>
-              • فارغ التحصیل مهندسی برق کنترل از دانشگاه صنعتی اصفهان <br />
-              • فعال حوزه برنامه نویسی،IT و اینترنت اشیاء <br />
-              • علاقه مند به ساخت راهکارهای کاربردی و حل مسئله های واقعی <br />
-              • طراح سایت <br />
-            </p>
-            
+      <main id="main" class="content">
+        <section class="view view--home" id="home" aria-labelledby="hero-title">
+          <div class="home-grid">
+            <div class="home-copy">
+              <p class="eyebrow">
+                <span class="status-dot" aria-hidden="true"></span> سید علی
+                خدامی <span class="eyebrow-sep">/</span> اصفهان، ایران
+              </p>
+              <h1 id="hero-title">
+                مهندس اتوماسیون صنعتی<br /><span class="serif-accent"
+                  >و توسعه‌دهندهٔ وب.</span
+                >
+              </h1>
+              <p class="hero-role">
+                اتوماسیون صنعتی <span aria-hidden="true">·</span>طراح سایت
+                فروشگاهی <span aria-hidden="true">·</span>
+                <bdi>اینترنت اشیاء و Embedded Systems</bdi>
+              </p>
+              <p class="hero-intro">
+                مهندس اتوماسیون صنعتی در <bdi>IRISA</bdi>؛ علاقه‌مند به
+                برنامه‌نویسی، تحول دیجیتال و ساخت راهکارهایی که در دنیای واقعی
+                به کار می‌آیند.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-dark" href="#projects"
+                  >دیدن پروژه‌ها
+                  <i class="fa-solid fa-arrow-left" aria-hidden="true"></i
+                ></a>
+                <a class="button button-outline" href="#shop-services"
+                  >طراحی فروشگاه اینترنتی
+                  <i class="fa-solid fa-arrow-left" aria-hidden="true"></i
+                ></a>
+              </div>
+              <div class="hero-meta">
+                <span
+                  >مهندس اتوماسیون صنعتی در
+                  <strong><bdi>IRISA</bdi></strong></span
+                >
+                <span class="meta-separator" aria-hidden="true"></span>
+                <span>از سال ۱۴۰۳ تاکنون</span>
+              </div>
+            </div>
+            <figure class="home-portrait">
+              <img
+                src="assets/images/profile-photo.JPG"
+                alt="عکس سید علی خدامی"
+                fetchpriority="high"
+              />
+              <figcaption>
+                صنعت <span aria-hidden="true">·</span> سخت‌افزار
+                <span aria-hidden="true">·</span> وب
+              </figcaption>
+            </figure>
           </div>
-          <div class="about-facts">
-            <div class="fact-item">
-              <span class="fact-label">حوزهٔ فعلی</span
-              ><span class="fact-value">اتوماسیون صنعتی</span>
-            </div>
-            <div class="fact-item">
-              <span class="fact-label">تحصیلات</span
-              ><span class="fact-value">مهندسی برق کنترل</span>
-            </div>
-            <div class="fact-item">
-              <span class="fact-label">محل زندگی</span
-              ><span class="fact-value">اصفهان، ایران</span>
-            </div>
-          </div>
-        </div>
-      </section>
+          <p class="home-footnote">از مسئلهٔ واقعی تا راهکار قابل‌استفاده</p>
+        </section>
 
-      <section class="skills-band" id="skills" aria-labelledby="skills-title">
-        <div class="section-wrap skills-inner">
-          <div class="skills-heading">
-            <p class="eyebrow">
-              زمینه‌های کاری و ابزارها <span class="eyebrow-divider">/</span> ۰۲
-            </p>
-            <h2 id="skills-title">
-              مهارت‌ها
+        <section class="view" id="about" aria-labelledby="about-title">
+          <div class="section-head">
+            <p class="eyebrow"><span class="eyebrow-num">۰۱</span>دربارهٔ من</p>
+            <h2 id="about-title">
+              مهندس کنترل،<br /><span class="serif-accent"
+                >علاقه‌مند به ساختن.</span
+              >
             </h2>
-            <p class="skills-intro">
+          </div>
+          <div class="about-grid">
+            <div class="about-copy">
+              <p class="lead">
+                برنامه‌نویس اتوماسیون صنعتی و علاقه‌مند به توسعهٔ نرم‌افزار.
+              </p>
+              <ul class="about-points">
+                <li>فارغ‌التحصیل مهندسی برق کنترل از دانشگاه صنعتی اصفهان</li>
+                <li>فعال در حوزهٔ برنامه‌نویسی، IT و اینترنت اشیاء</li>
+                <li>
+                  علاقه‌مند به ساخت راهکارهای کاربردی و حل مسئله‌های واقعی
+                </li>
+                <li>طراح سایت</li>
+              </ul>
+            </div>
+            <dl class="about-facts">
+              <div class="fact-item">
+                <dt class="fact-label">حوزهٔ فعلی</dt>
+                <dd class="fact-value">اتوماسیون صنعتی</dd>
+              </div>
+              <div class="fact-item">
+                <dt class="fact-label">تحصیلات</dt>
+                <dd class="fact-value">مهندسی برق کنترل</dd>
+              </div>
+              <div class="fact-item">
+                <dt class="fact-label">محل زندگی</dt>
+                <dd class="fact-value">اصفهان، ایران</dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <section class="view" id="education" aria-labelledby="education-title">
+          <div class="section-head">
+            <p class="eyebrow"><span class="eyebrow-num">۰۲</span>تحصیلات</p>
+            <h2 id="education-title">تحصیلات</h2>
+          </div>
+          <div class="education-list">
+            <article class="education-item">
+              <span class="education-year">دیپلم</span>
+              <div>
+                <h3>ریاضی - فیزیک</h3>
+                <p>استعدادهای درخشان شهید اژه‌ای ۲</p>
+              </div>
+              <span class="education-note">ریاضی - فیزیک</span>
+            </article>
+            <article class="education-item">
+              <span class="education-year">کارشناسی</span>
+              <div>
+                <h3>مهندسی کنترل</h3>
+                <p>دانشگاه صنعتی اصفهان <span>·</span> اصفهان، ایران</p>
+              </div>
+              <span class="education-note">مهندسی برق و کنترل</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="skills" aria-labelledby="skills-title">
+          <div class="section-head">
+            <p class="eyebrow"><span class="eyebrow-num">۰۳</span>مهارت‌ها</p>
+            <h2 id="skills-title">زمینه‌های کاری و ابزارها</h2>
+            <p class="section-lead">
               ترکیبی از اتوماسیون، الکترونیک و توسعهٔ نرم‌افزار
             </p>
           </div>
-          <div class="skill-grid">
-            <article class="skill-card">
-              <span class="skill-icon" aria-hidden="true">۰۱</span>
-              <h3>اتوماسیون صنعتی</h3>
-              <p>
-                برنامه‌نویسی PLC و طراحی رابط‌های اپراتوری برای فرایندهای
-                صنعتی.
-              </p>
-              <span class="skill-tags" dir="ltr"
-                >PLC · HMI · Siemens TIA Portal · WinCC</span
-              >
-            </article>
-            <article class="skill-card">
-              <span class="skill-icon" aria-hidden="true">۰۲</span>
-              <h3>Embedded Systems و الکترونیک</h3>
-              <p>
-                نمونه‌سازی راهکارهای متصل با میکروکنترلرها و طراحی بردهای
-                الکترونیکی.
-              </p>
-              <span class="skill-tags" dir="ltr"
-                >Arduino · ESP8266 · PCB · EasyEDA · IoT</span
-              >
-            </article>
-            <article class="skill-card">
-              <span class="skill-icon" aria-hidden="true">۰۳</span>
-              <h3>توسعهٔ فرانت‌اند</h3>
-              <p>
-                ساخت رابط وب با تمرکز بر ساختار درست، واکنش‌گرایی و تجربهٔ
-                کاربر.
-              </p>
-              <span class="skill-tags" dir="ltr"
-                >HTML5 · CSS3 · JavaScript · React (Junior)</span
-              >
-            </article>
-            <article class="skill-card">
-              <span class="skill-icon" aria-hidden="true">۰۴</span>
-              <h3>توسعهٔ وب</h3>
-              <p>
-                راه‌اندازی و توسعهٔ وب‌سایت‌های محتوایی و فروشگاهی با وردپرس.
-              </p>
-              <span class="skill-tags" dir="ltr"
-                >WordPress · Elementor · WooCommerce · PHP · MySQL</span
-              >
-            </article>
-            <article class="skill-card">
-              <span class="skill-icon" aria-hidden="true">۰۵</span>
-              <h3>برنامه‌نویسی</h3>
-              <p>
-                ابزارهای برنامه‌نویسی و ارتباط با سرویس‌ها برای ساخت پروژه‌های
-                کاربردی.
-              </p>
-              <span class="skill-tags" dir="ltr">C · C++ · REST API · Git</span>
-            </article>
-            <article class="skill-card">
-              <span class="skill-icon" aria-hidden="true">۰۶</span>
-              <h3>زبان‌ها</h3>
+          <ul class="skill-list">
+            <li class="skill-row">
+              <span class="skill-index" aria-hidden="true">۰۱</span>
+              <div class="skill-body">
+                <h3>اتوماسیون صنعتی</h3>
+                <p>
+                  برنامه‌نویسی PLC و طراحی رابط‌های اپراتوری برای فرایندهای
+                  صنعتی.
+                </p>
+                <p class="skill-tags" dir="ltr">
+                  PLC · HMI · Siemens TIA Portal · WinCC
+                </p>
+              </div>
+            </li>
+            <li class="skill-row">
+              <span class="skill-index" aria-hidden="true">۰۲</span>
+              <div class="skill-body">
+                <h3>Embedded Systems و الکترونیک</h3>
+                <p>
+                  نمونه‌سازی راهکارهای متصل با میکروکنترلرها و طراحی بردهای
+                  الکترونیکی.
+                </p>
+                <p class="skill-tags" dir="ltr">
+                  Arduino · ESP8266 · PCB · EasyEDA · IoT
+                </p>
+              </div>
+            </li>
+            <li class="skill-row">
+              <span class="skill-index" aria-hidden="true">۰۳</span>
+              <div class="skill-body">
+                <h3>توسعهٔ فرانت‌اند</h3>
+                <p>
+                  ساخت رابط وب با تمرکز بر ساختار درست، واکنش‌گرایی و تجربهٔ
+                  کاربر.
+                </p>
+                <p class="skill-tags" dir="ltr">
+                  HTML5 · CSS3 · JavaScript · React (Junior)
+                </p>
+              </div>
+            </li>
+            <li class="skill-row">
+              <span class="skill-index" aria-hidden="true">۰۴</span>
+              <div class="skill-body">
+                <h3>توسعهٔ وب</h3>
+                <p>
+                  راه‌اندازی و توسعهٔ وب‌سایت‌های محتوایی و فروشگاهی با وردپرس.
+                </p>
+                <p class="skill-tags" dir="ltr">
+                  WordPress · Elementor · WooCommerce · PHP · MySQL
+                </p>
+              </div>
+            </li>
+            <li class="skill-row">
+              <span class="skill-index" aria-hidden="true">۰۵</span>
+              <div class="skill-body">
+                <h3>برنامه‌نویسی</h3>
+                <p>
+                  ابزارهای برنامه‌نویسی و ارتباط با سرویس‌ها برای ساخت پروژه‌های
+                  کاربردی.
+                </p>
+                <p class="skill-tags" dir="ltr">C · C++ · REST API · Git</p>
+              </div>
+            </li>
+            <li class="skill-row">
+              <span class="skill-index" aria-hidden="true">۰۶</span>
+              <div class="skill-body">
+                <h3>زبان‌ها</h3>
+                <p>انگلیسی: متوسط رو به بالا</p>
+              </div>
+            </li>
+          </ul>
+        </section>
 
-              <span class="skill-tags">
-                 <span aria-hidden="true">·</span> انگلیسی:
-                متوسط رو به بالا</span
-              >
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="experience section-wrap section-block"
-        id="experience"
-        aria-labelledby="experience-title"
-      >
-        <div class="section-heading split-heading">
-          <div>
-            <p class="eyebrow">
-              تجربهٔ کاری <span class="eyebrow-divider">/</span> ۰۳
+        <section
+          class="view"
+          id="experience"
+          aria-labelledby="experience-title"
+        >
+          <div class="section-head">
+            <p class="eyebrow"><span class="eyebrow-num">۰۴</span>سوابق شغلی</p>
+            <h2 id="experience-title">سوابق شغلی</h2>
+            <p class="section-lead">
+              تجربهٔ حرفه‌ای من از اتوماسیون صنعتی می‌آید؛ جایی که نرم‌افزار
+              باید با تجهیزات و شرایط واقعی هماهنگ باشد.
             </p>
-            <h2 id="experience-title">
-             تجربه های کاری
-            </h2>
           </div>
-          <p class="heading-aside">
-            تجربهٔ حرفه‌ای من از اتوماسیون صنعتی می‌آید؛ جایی که نرم‌افزار باید
-            با تجهیزات و شرایط واقعی هماهنگ باشد.
-          </p>
-        </div>
-        <div class="timeline">
-          <article class="timeline-entry">
-            <span class="timeline-marker" aria-hidden="true"></span>
-            <div class="timeline-date">1403 — تاکنون</div>
-            <div class="timeline-detail">
-              <h3>مهندس اتوماسیون <span>·</span> <bdi>IRISA</bdi></h3>
-              <p class="timeline-location">
-                ایران <span>·</span> اتوماسیون و کنترل صنعتی
-              </p>
-              <p>
-                مشارکت در توسعهٔ نرم‌افزارهای اتوماسیون صنعتی، برنامه‌نویسی
-                <bdi>PLC</bdi> و طراحی صفحات <bdi>HMI</bdi>. فعالیت در زمینهٔ
-                سیستم‌های کنترلی و راه‌اندازی صنعتی، با کار روی تجهیزات و
-                فناوری‌های زیمنس از جمله <bdi>TIA Portal</bdi> و
-                <bdi>WinCC</bdi>.
-              </p>
-              <div class="tag-list">
-                <span dir="ltr">PLC</span><span dir="ltr">HMI</span
-                ><span dir="ltr">Siemens</span><span>راه‌اندازی صنعتی</span
-                ><span>سیستم‌های کنترلی</span>
+          <div class="timeline">
+            <article class="timeline-entry">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="timeline-date">۱۴۰۳ — تاکنون</div>
+              <div class="timeline-detail">
+                <h3>مهندس اتوماسیون <span>·</span> <bdi>IRISA</bdi></h3>
+                <p class="timeline-location">
+                  ایران <span>·</span> اتوماسیون و کنترل صنعتی
+                </p>
+                <p>
+                  مشارکت در توسعهٔ نرم‌افزارهای اتوماسیون صنعتی، برنامه‌نویسی
+                  <bdi>PLC</bdi> و طراحی صفحات <bdi>HMI</bdi>. فعالیت در زمینهٔ
+                  سیستم‌های کنترلی و راه‌اندازی صنعتی، با کار روی تجهیزات و
+                  فناوری‌های زیمنس از جمله <bdi>TIA Portal</bdi> و
+                  <bdi>WinCC</bdi>.
+                </p>
+                <div class="tag-list">
+                  <span dir="ltr">PLC</span><span dir="ltr">HMI</span
+                  ><span dir="ltr">Siemens</span><span>راه‌اندازی صنعتی</span
+                  ><span>سیستم‌های کنترلی</span>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-
-
-          <article class="timeline-entry">
-            <span class="timeline-marker" aria-hidden="true"></span>
-            <div class="timeline-date">1401 - 1401</div>
-            <div class="timeline-detail">
-              <h3>کارآموزی<span>·</span> <bdi>شرکت گلنور</bdi></h3>
-              <p class="timeline-location">
-                ایران <span>·</span> اتوماسیون صنعتی
-              </p>
-              <p>
-                آشنایی با اصول سیستم‌های کنترل صنعتی و نحوهٔ کار با تجهیزات
-                اتوماسیون، همراه با همکاری در بررسی پروژه‌ها و مستندسازی فنی.
-                در این دوره بیشتر با <bdi>PLC</bdi>، سنسورها، رابط‌های انسانی و
-                شیوهٔ هماهنگی بین تیم فنی و نصب‌کاران آشنا شدم و درک بهتری از
-                مشکلات واقعی اجرا در محیط‌های صنعتی پیدا کردم.
-              </p>
-              <div class="tag-list">
-                <span dir="ltr">PLC</span><span>سنسورها</span
-                ><span>HMI</span><span>مستندسازی</span
-                ><span>نصب و راه‌اندازی</span>
+            <article class="timeline-entry">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="timeline-date">۱۴۰۱</div>
+              <div class="timeline-detail">
+                <h3>کارآموزی <span>·</span> <bdi>شرکت گلنور</bdi></h3>
+                <p class="timeline-location">
+                  ایران <span>·</span> اتوماسیون صنعتی
+                </p>
+                <p>
+                  آشنایی با اصول سیستم‌های کنترل صنعتی و نحوهٔ کار با تجهیزات
+                  اتوماسیون، همراه با همکاری در بررسی پروژه‌ها و مستندسازی فنی.
+                  در این دوره بیشتر با <bdi>PLC</bdi>، سنسورها، رابط‌های انسانی
+                  و شیوهٔ هماهنگی بین تیم فنی و نصب‌کاران آشنا شدم.
+                </p>
+                <div class="tag-list">
+                  <span dir="ltr">PLC</span><span>سنسورها</span><span>HMI</span
+                  ><span>مستندسازی</span><span>نصب و راه‌اندازی</span>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-                    <article class="timeline-entry">
-            <span class="timeline-marker" aria-hidden="true"></span>
-            <div class="timeline-date">1400 - 1401</div>
-            <div class="timeline-detail">
-              <h3>مسئول فروش<span>·</span> <bdi>شرکت هایکا</bdi></h3>
-              <p class="timeline-location">
-                ایران <span>·</span> خانه هوشمند
-              </p>
-              <p>
-                بررسی نیاز مشتریان، معرفی محصولات و راه‌حل‌های مرتبط با خانهٔ
-                هوشمند و هماهنگی بین مشتری و تیم فنی برای ارائهٔ پیشنهاد مناسب.
-                در این نقش، تعامل مستقیم با مشتریان و پیگیری سفارش‌ها به من کمک
-                کرد تا با نیازهای بازار و نحوهٔ ارائهٔ راه‌حل‌های فنی آشنا شوم.
-              </p>
-              <div class="tag-list">
-                <span>فروش</span><span>مشتری‌مداری</span
-                ><span>خانه هوشمند</span><span>پشتیبانی فنی</span
-                ><span>هماهنگی پروژه</span>
+            <article class="timeline-entry">
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <div class="timeline-date">۱۴۰۰ — ۱۴۰۱</div>
+              <div class="timeline-detail">
+                <h3>مسئول فروش <span>·</span> <bdi>شرکت هایکا</bdi></h3>
+                <p class="timeline-location">
+                  ایران <span>·</span> خانه هوشمند
+                </p>
+                <p>
+                  بررسی نیاز مشتریان، معرفی محصولات و راه‌حل‌های مرتبط با خانهٔ
+                  هوشمند و هماهنگی بین مشتری و تیم فنی برای ارائهٔ پیشنهاد
+                  مناسب.
+                </p>
+                <div class="tag-list">
+                  <span>فروش</span><span>مشتری‌مداری</span
+                  ><span>خانه هوشمند</span><span>پشتیبانی فنی</span
+                  ><span>هماهنگی پروژه</span>
+                </div>
               </div>
-            </div>
-          </article>
-        </div>
-      </section>
+            </article>
+          </div>
+        </section>
 
-      <section
-        class="projects section-block"
-        id="projects"
-        aria-labelledby="projects-title"
-      >
-        <div class="section-wrap">
-          <div class="section-heading split-heading">
-            <div>
-              <p class="eyebrow">
-                پروژه‌ها <span class="eyebrow-divider">/</span> ۰۴
-              </p>
-              <h2 id="projects-title">
-                  نمونه کار ها
-              </h2>
-            </div>
-            <p class="heading-aside">
+        <section class="view" id="projects" aria-labelledby="projects-title">
+          <div class="section-head">
+            <p class="eyebrow"><span class="eyebrow-num">۰۵</span>پروژه‌ها</p>
+            <h2 id="projects-title">نمونه‌کارها</h2>
+            <p class="section-lead">
               از نمونه‌های اینترنت اشیا و وب تا پروژه‌های دانشگاهی و صنعتی.
               جزئیات پروژه‌های محرمانه را منتشر نمی‌کنم.
             </p>
           </div>
+
           <article class="featured-project">
             <a
-              class="project-image"
+              class="project-image project-image--app"
               href="#contact"
               aria-label="دربارهٔ سامانهٔ آبیاری هوشمند اینترنت اشیا بیشتر بپرسید"
             >
               <img
-                src="assets/images/project-irrigation.svg"
-                alt="پیش‌نمایش داشبورد سامانهٔ آبیاری با میزان رطوبت خاک، وضعیت دستگاه‌ها و برنامهٔ آبیاری"
+                src="assets/images/project-irrigation-app.svg"
+                alt="صفحهٔ اصلی اپلیکیشن آبیاری هوشمند باران: وضعیت دستگاه، رطوبت خاک، آبیاری خودکار بعدی و آبیاری دستی"
                 loading="lazy"
+                width="477"
+                height="858"
               />
               <span class="project-number">پروژهٔ شاخص</span>
             </a>
             <div class="featured-copy">
               <p class="eyebrow">
-                اینترنت اشیا <span class="eyebrow-divider">/</span> سخت‌افزار و
-                وب
+                اینترنت اشیا <span class="eyebrow-sep">/</span> سخت‌افزار و وب
               </p>
               <h3>سیستم آبیاری هوشمند</h3>
               <p>
-                در این پروژه، اندازه‌گیری رطوبت خاک به زمان‌بندی آبیاری و پایش
-                از راه دور وصل می‌شود. داشبورد وب، وضعیت حسگرها و نوبت بعدی
-                آبیاری را یک‌جا نشان می‌دهد.
+                اندازه‌گیری رطوبت خاک به زمان‌بندی آبیاری و پایش از راه دور وصل
+                می‌شود. داشبورد وب، وضعیت حسگرها و نوبت بعدی آبیاری را یک‌جا
+                نشان می‌دهد.
               </p>
               <div class="tag-list">
                 <span dir="ltr">ESP8266</span><span dir="ltr">Arduino</span
@@ -396,8 +411,9 @@
               </div>
             </div>
           </article>
-          <div class="project-grid">
-            <article class="project-card project-card--venzo">
+
+          <div class="project-list">
+            <article class="project-row">
               <a
                 class="project-image"
                 href="https://venzofurniture.ir"
@@ -410,7 +426,6 @@
                   alt="پیش‌نمایش صفحهٔ اصلی سایت فروشگاهی ونزو برای مبلمان"
                   loading="lazy"
                 />
-                <span class="project-number">۰۲</span>
               </a>
               <div class="project-info">
                 <div class="project-title-row">
@@ -418,9 +433,8 @@
                   <span class="project-type">فروشگاه مبلمان</span>
                 </div>
                 <p>
-                  برای کارگاه ونزو، کاتالوگ مبلمان و مسیر سفارش اختصاصی را در
-                  قالب فروشگاهی واکنش‌گرا کنار هم آوردم؛ تا مشتری بتواند مدل‌ها
-                  را ببیند و برای سفارش سفارشی اقدام کند.
+                  کاتالوگ مبلمان و مسیر سفارش اختصاصی در قالب فروشگاهی واکنش‌گرا
+                  تا مشتری بتواند مدل‌ها را ببیند و سفارش دهد.
                 </p>
                 <div class="tag-list">
                   <span dir="ltr">WordPress</span
@@ -440,15 +454,15 @@
                 ></a>
               </div>
             </article>
-            <article class="project-card">
+
+            <article class="project-row">
               <div class="project-image">
                 <img
                   src="assets/images/project-automation.jpg"
-                  alt="نمای تجهیزات اتوماسیون صنعتی شامل کنترل‌گر Siemens SIMATIC S7-1500، پنل HMI و Rack PC"
+                  alt="تجهیزات اتوماسیون صنعتی شامل کنترل‌گر Siemens SIMATIC S7-1500، پنل HMI و Rack PC"
                   loading="lazy"
                   decoding="async"
                 />
-                <span class="project-number">۰۳</span>
               </div>
               <div class="project-info">
                 <div class="project-title-row">
@@ -456,10 +470,9 @@
                   <span class="project-type">تجربهٔ کاری</span>
                 </div>
                 <p>
-                  بخشی از تجربهٔ کاری من شامل برنامه‌نویسی <bdi>PLC</bdi>، طراحی
-                  <bdi>HMI</bdi> و راه‌اندازی سیستم‌های کنترلی است. به‌دلیل
-                  محرمانه‌بودن پروژه‌ها، جزئیات اجرایی منتشر نشده؛ تصویر این کارت
-                  بخشی از تجهیزات اتوماسیون صنعتی را نشان می‌دهد.
+                  برنامه‌نویسی <bdi>PLC</bdi>، طراحی <bdi>HMI</bdi> و راه‌اندازی
+                  سیستم‌های کنترلی. به‌دلیل محرمانه‌بودن پروژه‌ها، جزئیات اجرایی
+                  منتشر نشده است.
                 </p>
                 <div class="tag-list">
                   <span dir="ltr">PLC</span><span dir="ltr">HMI</span
@@ -467,14 +480,14 @@
                 </div>
               </div>
             </article>
-            <article class="project-card">
+
+            <article class="project-row">
               <div class="project-image">
                 <img
-                  src="assets/images/project-pcb.svg"
-                  alt="نمای نزدیک از طرح مفهومی برد الکترونیکی"
+                  src="assets/images/project-pcb.jpg"
+                  alt="نمای نزدیک از برد الکترونیکی"
                   loading="lazy"
                 />
-                <span class="project-number">۰۴</span>
               </div>
               <div class="project-info">
                 <div class="project-title-row">
@@ -482,9 +495,9 @@
                   <span class="project-type">الکترونیک نهفته</span>
                 </div>
                 <p>
-                  در این مجموعه، طرح بردها و نمونه‌های سخت‌افزار نهفته‌ای را
-                  می‌بینید که با <bdi>EasyEDA</bdi> برای ایده‌های الکترونیکی و
-                  اینترنت اشیا آماده شده‌اند.
+                  طرح بردها و نمونه‌های سخت‌افزار نهفته‌ای که با
+                  <bdi>EasyEDA</bdi> برای ایده‌های الکترونیکی و اینترنت اشیا
+                  آماده شده‌اند.
                 </p>
                 <div class="tag-list">
                   <span dir="ltr">EasyEDA</span><span>طراحی برد</span
@@ -492,14 +505,14 @@
                 </div>
               </div>
             </article>
-            <article class="project-card">
+
+            <article class="project-row">
               <div class="project-image">
                 <img
-                  src="assets/images/project-control.svg"
-                  alt="نمودار مفهومی سیستم کنترل و پاسخ زمانی آن"
+                  src="assets/images/project-control.jpg"
+                  alt="نمودار سیستم کنترل و پاسخ زمانی آن"
                   loading="lazy"
                 />
-                <span class="project-number">۰۵</span>
               </div>
               <div class="project-info">
                 <div class="project-title-row">
@@ -507,8 +520,8 @@
                   <span class="project-type">دانشگاهی</span>
                 </div>
                 <p>
-                  چند تمرین و پروژهٔ دورهٔ کارشناسی که مفاهیم مهندسی کنترل و
-                  اتوماسیون را از درس به مسئله‌های قابل‌تحلیل نزدیک کردند.
+                  تمرین‌ها و پروژه‌های دورهٔ کارشناسی که مفاهیم مهندسی کنترل و
+                  اتوماسیون را به مسئله‌های قابل‌تحلیل نزدیک کردند.
                 </p>
                 <div class="tag-list">
                   <span>مهندسی کنترل</span><span>اتوماسیون</span
@@ -516,18 +529,14 @@
                 </div>
               </div>
             </article>
-            <article class="project-card project-card--video">
-              <div
-                class="video-art"
-                role="img"
-                aria-label="تصویر محیط Adobe Premiere Pro هنگام تدوین ویدیو"
-              >
+
+            <article class="project-row">
+              <div class="project-image">
                 <img
-                  src="assets/images/project-video-editing-real.png"
-                  alt=""
+                  src="assets/images/project-video-editing-real.jpg"
+                  alt="محیط تدوین ویدیو"
                   loading="lazy"
                 />
-                <span class="project-number">۰۶</span>
               </div>
               <div class="project-info">
                 <div class="project-title-row">
@@ -535,8 +544,7 @@
                   <span class="project-type">محتوای تصویری</span>
                 </div>
                 <p>
-                  نمونه‌هایی از تدوین ویدیوهای معرفی محصول و محتوای تبلیغاتی؛
-                  به‌زودی جزئیات هر سفارش و نسخهٔ نهایی را اینجا اضافه می‌کنم.
+                  نمونه‌هایی از تدوین ویدیوهای معرفی محصول و محتوای تبلیغاتی.
                 </p>
                 <div class="tag-list">
                   <span dir="ltr">Adobe Premiere Pro</span>
@@ -544,115 +552,65 @@
               </div>
             </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section
-        class="shop-services section-wrap section-block"
-        id="shop-services"
-        aria-labelledby="shop-services-title"
-      >
-        <div class="section-heading split-heading">
-          <div>
+        <section
+          class="view"
+          id="shop-services"
+          aria-labelledby="shop-services-title"
+        >
+          <div class="section-head">
             <p class="eyebrow">
-              برای فروشگاه اینترنتی <span class="eyebrow-divider">/</span> ۰۶
+              <span class="eyebrow-num">۰۶</span>فروشگاه اینترنتی
             </p>
             <h2 id="shop-services-title">
               فروشگاهی که<br /><span class="serif-accent"
                 >کار مشتری را راه بیندازد.</span
               >
             </h2>
-          </div>
-          <p class="heading-aside">
-            اگر برای کسب‌وکارتان به سایت فروشگاهی نیاز دارید، دربارهٔ نیازها و
-            روند کاری‌تان صحبت کنیم.
-          </p>
-        </div>
-        <div class="service-list">
-          <article class="service-row">
-            <span class="service-index">۰۱</span>
-            <h3>کاتالوگ محصول</h3>
-            <p>دسته‌بندی و صفحهٔ محصولی که پیدا کردن و مقایسه را ساده کند.</p>
-            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-          </article>
-          <article class="service-row">
-            <span class="service-index">۰۲</span>
-            <h3>ثبت سفارش</h3>
-            <p>فرایندی روشن برای سفارش‌های آماده یا درخواست‌های سفارشی.</p>
-            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-          </article>
-          <article class="service-row">
-            <span class="service-index">۰۳</span>
-            <h3>راه‌اندازی وردپرس</h3>
-            <p>ساخت فروشگاه با ابزارهای آشنا و امکان مدیریت محتوای روزمره.</p>
-            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-          </article>
-          <a class="service-contact-link" href="#contact"
-            >دربارهٔ فروشگاهتان صحبت کنیم
-            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i
-          ></a>
-        </div>
-      </section>
-
-      <section
-        class="education section-wrap section-block"
-        id="education"
-        aria-labelledby="education-title"
-      >
-        <div class="section-heading split-heading">
-          <div>
-            <p class="eyebrow">
-              تحصیلات <span class="eyebrow-divider">/</span> ۰۷
+            <p class="section-lead">
+              اگر برای کسب‌وکارتان به سایت فروشگاهی نیاز دارید، دربارهٔ نیازها و
+              روند کاری‌تان صحبت کنیم.
             </p>
-            <h2 id="education-title">
-             تحصیلات
-            </h2>
           </div>
-          
-         
-        </div>
-        <div class="education-list">
-          <article class="education-item">
-            <span class="education-year">دیپلم</span>
-            <div>
-              <h3>ریاضی - فیزیک</h3>
-              <p>استعدادهای درخشان شهید اژه‌ای ۲</p>
-            </div>
-            <span class="education-note">ریاضی - فیزیک</span>
-          </article>
-          <article class="education-item">
-            <span class="education-year">کارشناسی</span>
-            <div>
-              <h3>مهندسی کنترل</h3>
-              <p>دانشگاه صنعتی اصفهان <span>·</span> اصفهان، ایران</p>
-            </div>
-            <span class="education-note">مهندسی برق و کنترل</span>
-          </article>
-          
-        </div>
-      </section>
+          <div class="service-list">
+            <article class="service-row">
+              <span class="service-index" aria-hidden="true">۰۱</span>
+              <h3>کاتالوگ محصول</h3>
+              <p>دسته‌بندی و صفحهٔ محصولی که پیدا کردن و مقایسه را ساده کند.</p>
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </article>
+            <article class="service-row">
+              <span class="service-index" aria-hidden="true">۰۲</span>
+              <h3>ثبت سفارش</h3>
+              <p>فرایندی روشن برای سفارش‌های آماده یا درخواست‌های سفارشی.</p>
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </article>
+            <article class="service-row">
+              <span class="service-index" aria-hidden="true">۰۳</span>
+              <h3>راه‌اندازی وردپرس</h3>
+              <p>ساخت فروشگاه با ابزارهای آشنا و امکان مدیریت محتوای روزمره.</p>
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </article>
+            <a class="service-contact-link" href="#contact"
+              >دربارهٔ فروشگاهتان صحبت کنیم
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i
+            ></a>
+          </div>
+        </section>
 
-      <section
-        class="timeline-section section-block"
-        id="timeline"
-        aria-labelledby="timeline-title"
-      >
-        <div class="section-wrap">
-          <div class="section-heading split-heading">
-            <div>
-              <p class="eyebrow">
-                چند نقطهٔ عطف <span class="eyebrow-divider">/</span> ۰۸
-              </p>
-              <h2 id="timeline-title">
-                مسیر یادگیری و<br /><span class="serif-accent">ساختن.</span>
-              </h2>
-            </div>
-            <p class="heading-aside">
+        <section class="view" id="timeline" aria-labelledby="timeline-title">
+          <div class="section-head">
+            <p class="eyebrow"><span class="eyebrow-num">۰۷</span>مسیر من</p>
+            <h2 id="timeline-title">
+              مسیر یادگیری و<br /><span class="serif-accent">ساختن.</span>
+            </h2>
+            <p class="section-lead">
               این‌ها ایستگاه‌های مسیر من‌اند؛ ترتیبشان مهم‌تر از تاریخ دقیق
               هرکدام است.
             </p>
           </div>
-          <div class="timeline milestone-list">
+          <div class="timeline">
             <article class="timeline-entry">
               <span class="timeline-marker" aria-hidden="true"></span>
               <div class="timeline-date">دانشگاه</div>
@@ -709,24 +667,23 @@
               </div>
             </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section
-        class="certificates section-block"
-        aria-labelledby="certificates-title"
-      >
-        <div class="section-wrap">
-          <div class="section-heading certificate-heading">
+        <section
+          class="view"
+          id="certificates"
+          aria-labelledby="certificates-title"
+        >
+          <div class="section-head">
             <p class="eyebrow">
-              دوره‌ها و گواهی‌ها <span class="eyebrow-divider">/</span> ۰۹
+              <span class="eyebrow-num">۰۸</span>دوره‌ها و گواهی‌ها
             </p>
             <h2 id="certificates-title">
               یادگیری را <span class="serif-accent">ادامه می‌دهم.</span>
             </h2>
           </div>
-          <div class="certificate-grid">
-            <article class="certificate-card">
+          <div class="certificate-list">
+            <article class="certificate-row">
               <span class="certificate-index" aria-hidden="true">۰۱</span>
               <div>
                 <p class="certificate-year">دورهٔ تخصصی</p>
@@ -734,7 +691,7 @@
                 <p>آشنایی و آموزش مبانی برق صنعتی.</p>
               </div>
             </article>
-            <article class="certificate-card">
+            <article class="certificate-row">
               <span class="certificate-index" aria-hidden="true">۰۲</span>
               <div>
                 <p class="certificate-year">کسباتور</p>
@@ -742,7 +699,7 @@
                 <p>برنامهٔ آموزشی «مدیرعامل آینده» از کسباتور.</p>
               </div>
             </article>
-            <article class="certificate-card">
+            <article class="certificate-row">
               <span class="certificate-index" aria-hidden="true">۰۳</span>
               <div>
                 <p class="certificate-year">توسعهٔ وب</p>
@@ -750,7 +707,7 @@
                 <p>مبانی ساختار، طراحی و برنامه‌نویسی وب.</p>
               </div>
             </article>
-            <article class="certificate-card">
+            <article class="certificate-row">
               <span class="certificate-index" aria-hidden="true">۰۴</span>
               <div>
                 <p class="certificate-year">زبان انگلیسی</p>
@@ -759,136 +716,125 @@
               </div>
             </article>
           </div>
-        </div>
-      </section>
-      <section
-        class="contact section-wrap section-block"
-        id="contact"
-        aria-labelledby="contact-title"
-      >
-        <div class="contact-copy">
-          <p class="eyebrow">
-            ارتباط <span class="eyebrow-divider">/</span> ۱۰
-          </p>
-          <h2 id="contact-title">
-            برای همکاری یا<br /><span class="serif-accent"
-              >گفت‌وگو در دسترسم.</span
-            >
-          </h2>
-          <p class="contact-intro">
-            اگر دربارهٔ اتوماسیون، اینترنت اشیا یا توسعهٔ وب صحبت می‌کنید،
-            خوشحال می‌شوم پیام‌تان را بخوانم.
-          </p>
-          <a
-            class="contact-email"
-            href="mailto:s.alikhodami@gmail.com"
-            dir="ltr"
-            > s.alikhodami@gmail.com <i
-              class="fa-solid fa-arrow-up-left-from-square"
-              aria-hidden="true"
-            ></i
-          ></a>
-          <div class="contact-details">
-            <div>
-              <span class="detail-label">محل زندگی</span
-              ><span
-                >اصفهان، ایران
-                <i class="fa-solid fa-location-dot" aria-hidden="true"></i
-              ></span>
-            </div>
-            <div>
-              <span class="detail-label">شبکه‌های اجتماعی</span
-              ><span class="contact-socials">
-                <a
-                  href="https://www.linkedin.com/in/ali-khodami-4071b8275"
-                  target="_blank"
-                  rel="noreferrer"
-                  >لینکدین
-                  <i
-                    class="fa-solid fa-arrow-up-left-from-square"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-                <a
-                  href="https://github.com/AliKhodamii"
-                  target="_blank"
-                  rel="noreferrer"
-                  >گیت‌هاب
-                  <i
-                    class="fa-solid fa-arrow-up-left-from-square"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-                <a
-                  href="https://t.me/alikhodamii"
-                  target="_blank"
-                  rel="noreferrer"
-                  >تلگرام
-                  <i
-                    class="fa-solid fa-arrow-up-left-from-square"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-              </span>
-            </div>
+        </section>
+
+        <section class="view" id="contact" aria-labelledby="contact-title">
+          <div class="section-head">
+            <p class="eyebrow"><span class="eyebrow-num">۰۹</span>ارتباط</p>
+            <h2 id="contact-title">
+              برای همکاری یا<br /><span class="serif-accent"
+                >گفت‌وگو در دسترسم.</span
+              >
+            </h2>
           </div>
-          <p class="contact-placeholder-note">
-            نشانی ایمیل و حساب‌های اجتماعی را با اطلاعات واقعی خود جایگزین کنید.
-          </p>
-        </div>
-        <form class="contact-form" id="contact-form">
-          <p class="form-heading">
-            پیام بفرستید
-            <span>این فرم پیام را در برنامهٔ ایمیل شما آماده می‌کند.</span>
-          </p>
-          <label for="name">نام شما</label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            autocomplete="name"
-            placeholder="نام و نام خانوادگی"
-            required
-          />
-          <label for="email">نشانی ایمیل</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            autocomplete="email"
-            placeholder="you@example.com"
-            dir="ltr"
-            required
-          />
-          <label for="message">متن پیام</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            placeholder="موضوع پیامتان را بنویسید..."
-            required
-          ></textarea>
-          <button class="button button-dark form-submit" type="submit">
-            آماده‌کردن ایمیل
-            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-          </button>
-          <p class="form-note" id="form-status" aria-live="polite">
-            اطلاعات این فرم در سایت ذخیره نمی‌شود.
-          </p>
-        </form>
-      </section>
-    </main>
+          <div class="contact-grid">
+            <div class="contact-copy">
+              <p class="contact-intro">
+                اگر دربارهٔ اتوماسیون، اینترنت اشیا یا توسعهٔ وب صحبت می‌کنید،
+                خوشحال می‌شوم پیام‌تان را بخوانم.
+              </p>
+              <a
+                class="contact-email"
+                href="mailto:s.alikhodami@gmail.com"
+                dir="ltr"
+                >s.alikhodami@gmail.com
+                <i
+                  class="fa-solid fa-arrow-up-left-from-square"
+                  aria-hidden="true"
+                ></i
+              ></a>
+              <dl class="contact-details">
+                <div>
+                  <dt class="detail-label">محل زندگی</dt>
+                  <dd>
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    اصفهان، ایران
+                  </dd>
+                </div>
+                <div>
+                  <dt class="detail-label">شبکه‌های اجتماعی</dt>
+                  <dd class="contact-socials">
+                    <a
+                      href="https://www.linkedin.com/in/ali-khodami-4071b8275"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+                      >لینکدین</a
+                    >
+                    <a
+                      href="https://github.com/AliKhodamii"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><i class="fa-brands fa-github" aria-hidden="true"></i
+                      >گیت‌هاب</a
+                    >
+                    <a
+                      href="https://t.me/alikhodamii"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><i class="fa-brands fa-telegram" aria-hidden="true"></i
+                      >تلگرام</a
+                    >
+                  </dd>
+                </div>
+              </dl>
+            </div>
+            <form class="contact-form" id="contact-form">
+              <p class="form-heading">
+                پیام بفرستید
+                <span>این فرم پیام را در برنامهٔ ایمیل شما آماده می‌کند.</span>
+              </p>
+              <label for="name">نام شما</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="نام و نام خانوادگی"
+                required
+              />
+              <label for="email">نشانی ایمیل</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                dir="ltr"
+                required
+              />
+              <label for="message">متن پیام</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="موضوع پیامتان را بنویسید..."
+                required
+              ></textarea>
+              <button class="button button-dark form-submit" type="submit">
+                آماده‌کردن ایمیل
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+              </button>
+              <p class="form-note" id="form-status" aria-live="polite">
+                اطلاعات این فرم در سایت ذخیره نمی‌شود.
+              </p>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
 
     <footer class="site-footer">
-      <div class="section-wrap footer-inner">
+      <div class="footer-inner">
         <a
           class="wordmark footer-mark"
-          href="#top"
-          aria-label="بازگشت به بالای صفحه"
+          href="#home"
+          aria-label="بازگشت به صفحهٔ اصلی"
           >علی خدامی<span>.</span></a
         >
         <p>
-          سید علی خدامی <span>·</span> مهندس اتوماسیون و طراح سایت
+          سید علی خدامی <span aria-hidden="true">·</span> مهندس اتوماسیون و طراح
+          سایت
         </p>
         <a class="back-to-top" href="#top"
           >بازگشت به بالا <i class="fa-solid fa-arrow-up" aria-hidden="true"></i
