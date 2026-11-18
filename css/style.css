@@ -229,6 +229,14 @@ html.js-views .view:not(.is-active) {
 html.js-views .view.is-active {
   animation: view-in 0.3s ease;
 }
+
+/* ---------- Mobile section switcher + pager ---------- */
+/* Shown only on small screens (see the 980px breakpoint). */
+.view-switcher,
+.view-pager {
+  display: none;
+}
+
 @keyframes view-in {
   from {
     opacity: 0;
@@ -1046,30 +1054,36 @@ a.project-image:hover img {
     justify-content: space-between;
   }
 
+  /* 44×44 touch target; 3 bars, 22px wide, 2px thick, 5px apart. */
   .menu-toggle {
     display: flex;
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 6px;
-    padding: 10px;
+    gap: 5px;
+    padding: 0;
     border: 0;
+    margin-inline-end: -10px;
     background: transparent;
     cursor: pointer;
   }
   .menu-toggle span {
     display: block;
-    width: 20px;
-    height: 1px;
+    width: 22px;
+    height: 2px;
     background: var(--ink);
-    transition: transform 0.2s ease;
+    transition: transform 0.22s ease, opacity 0.16s ease;
   }
   .menu-toggle[aria-expanded="true"] span:first-child {
-    transform: translateY(3.5px) rotate(45deg);
+    transform: translateY(7px) rotate(45deg);
+  }
+  .menu-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
   }
   .menu-toggle[aria-expanded="true"] span:last-child {
-    transform: translateY(-3.5px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
   }
 
   .primary-nav {
@@ -1114,17 +1128,118 @@ a.project-image:hover img {
     display: none;
   }
 
+  /* Always-visible strip of panels, right under the header */
+  .content {
+    padding-top: 64px;
+  }
+  .view-switcher {
+    position: sticky;
+    z-index: 40;
+    top: 64px;
+    display: block;
+    border-bottom: 1px solid var(--line);
+    background: var(--paper);
+  }
+  /* Fade the far edge so it reads as "there are more sections left" */
+  .view-switcher::after {
+    content: "";
+    position: absolute;
+    inset-block: 0;
+    inset-inline-end: 0;
+    width: 26px;
+    background: linear-gradient(to left, transparent, var(--paper));
+    pointer-events: none;
+  }
+  .view-switcher-track {
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    padding: 10px 20px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    list-style: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .view-switcher-track::-webkit-scrollbar {
+    display: none;
+  }
+  .view-switcher-track li {
+    flex: 0 0 auto;
+  }
+  .view-switcher-track a {
+    display: block;
+    padding: 8px 14px;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: color 0.16s ease, border-color 0.16s ease,
+      background-color 0.16s ease;
+  }
+  .view-switcher-track a:hover {
+    border-color: var(--line-strong);
+    color: var(--ink);
+  }
+  .view-switcher-track a[aria-current="page"] {
+    border-color: var(--ink);
+    background: var(--ink);
+    color: var(--paper);
+    font-weight: 600;
+  }
+
+  /* The strip already separates header from content. */
   .view {
-    padding-top: 110px;
+    padding-top: 34px;
   }
   .view--home {
     min-height: 0;
+  }
+
+  /* Reach the next panel without going back to the top */
+  .view-pager {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 54px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+  }
+  .view-pager-link {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 12px 15px;
+    border: 1px solid var(--line);
+    background: var(--paper-2);
+    text-decoration: none;
+    transition: border-color 0.16s ease;
+  }
+  .view-pager-link:hover {
+    border-color: var(--line-strong);
+  }
+  .view-pager-link span {
+    color: var(--muted);
+    font-size: 10.5px;
+  }
+  .view-pager-link strong {
+    font-size: 13.5px;
+    font-weight: 600;
+  }
+  .view-pager-link--next {
+    border-color: var(--ink);
+    background: transparent;
+  }
+  .view-pager-link:only-child {
+    grid-column: 1 / -1;
   }
 }
 
 @media (max-width: 720px) {
   html {
-    scroll-padding-top: 72px;
+    scroll-padding-top: 136px;
   }
 
   .home-grid,

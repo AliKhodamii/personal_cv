@@ -3,8 +3,55 @@
   root.classList.add("js-views");
 
   const views = Array.from(document.querySelectorAll(".view"));
+
+  // Mobile switcher is the single source of truth for panel names.
+  const switcherLinks = Array.from(
+    document.querySelectorAll('.view-switcher a[href^="#"]')
+  );
+  const panelNames = new Map(
+    switcherLinks.map((a) => [
+      a.getAttribute("href").slice(1),
+      a.textContent.trim(),
+    ])
+  );
+
+  // Mobile only: previous / next panel at the end of each panel,
+  // so the other panels stay reachable without opening the menu.
+  views.forEach((view, index) => {
+    const previous = views[index - 1];
+    const next = views[index + 1];
+    if (!previous && !next) return;
+
+    const pager = document.createElement("nav");
+    pager.className = "view-pager";
+    pager.setAttribute("aria-label", "بخش‌های قبلی و بعدی");
+
+    const buildPagerLink = (target, kind) => {
+      const link = document.createElement("a");
+      link.className = "view-pager-link view-pager-link--" + kind;
+      link.href = "#" + target.id;
+      link.rel = kind === "next" ? "next" : "prev";
+
+      const hint = document.createElement("span");
+      hint.textContent = kind === "next" ? "بخش بعدی" : "بخش قبلی";
+
+      const name = document.createElement("strong");
+      name.textContent = panelNames.get(target.id) || target.id;
+
+      link.append(hint, name);
+      return link;
+    };
+
+    if (previous) pager.append(buildPagerLink(previous, "prev"));
+    if (next) pager.append(buildPagerLink(next, "next"));
+
+    view.append(pager);
+  });
+
   const navLinks = Array.from(
-    document.querySelectorAll('.primary-nav a[href^="#"]')
+    document.querySelectorAll(
+      '.primary-nav a[href^="#"], .view-switcher a[href^="#"]'
+    )
   );
   const viewAnchors = Array.from(
     document.querySelectorAll('a[href^="#"]')
@@ -41,6 +88,22 @@
         a.removeAttribute("aria-current");
       }
     });
+
+    // Keep the active chip visible inside the horizontal strip.
+    const activeChip = switcherLinks.find(
+      (a) => a.getAttribute("href") === "#" + id
+    );
+    if (activeChip) {
+      try {
+        activeChip.scrollIntoView({
+          block: "nearest",
+          inline: "center",
+          behavior: "smooth",
+        });
+      } catch (_) {
+        // Older browsers: the chip is still reachable by scrolling.
+      }
+    }
 
     try {
       window.scrollTo({ top: 0, behavior: "instant" });
