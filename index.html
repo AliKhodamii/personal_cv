@@ -50,11 +50,37 @@
             aria-controls="primary-navigation"
             aria-label="باز کردن منو"
           >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+            <svg
+              class="menu-toggle-icon"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <rect class="menu-bar menu-bar--top" x="2" y="5" width="20" height="2" rx="1" />
+              <rect class="menu-bar menu-bar--mid" x="2" y="11" width="20" height="2" rx="1" />
+              <rect class="menu-bar menu-bar--bottom" x="2" y="17" width="20" height="2" rx="1" />
+            </svg>
           </button>
         </div>
+
+        <!-- Mobile only: always-visible switch between the panels.
+             Lives inside the header so header + strip stick as one unit. -->
+        <nav class="view-switcher" aria-label="جابه‌جایی بین بخش‌ها">
+          <ul class="view-switcher-track">
+            <li><a href="#home">خانه</a></li>
+            <li><a href="#about">دربارهٔ من</a></li>
+            <li><a href="#education">تحصیلات</a></li>
+            <li><a href="#skills">مهارت‌ها</a></li>
+            <li><a href="#experience">سوابق شغلی</a></li>
+            <li><a href="#projects">نمونه‌کارها</a></li>
+            <li><a href="#shop-services">خدمات</a></li>
+            <li><a href="#timeline">مسیر من</a></li>
+            <li><a href="#certificates">گواهی‌نامه‌ها</a></li>
+            <li><a href="#contact">ارتباط</a></li>
+          </ul>
+        </nav>
 
         <nav
           class="primary-nav"
@@ -88,22 +114,6 @@
       </header>
 
       <main id="main" class="content">
-        <!-- Mobile only: always-visible switch between the panels -->
-        <nav class="view-switcher" aria-label="جابه‌جایی بین بخش‌ها">
-          <ul class="view-switcher-track">
-            <li><a href="#home">خانه</a></li>
-            <li><a href="#about">دربارهٔ من</a></li>
-            <li><a href="#education">تحصیلات</a></li>
-            <li><a href="#skills">مهارت‌ها</a></li>
-            <li><a href="#experience">سوابق شغلی</a></li>
-            <li><a href="#projects">نمونه‌کارها</a></li>
-            <li><a href="#shop-services">خدمات</a></li>
-            <li><a href="#timeline">مسیر من</a></li>
-            <li><a href="#certificates">گواهی‌نامه‌ها</a></li>
-            <li><a href="#contact">ارتباط</a></li>
-          </ul>
-        </nav>
-
         <section class="view view--home" id="home" aria-labelledby="hero-title">
           <div class="home-grid">
             <div class="home-copy">
