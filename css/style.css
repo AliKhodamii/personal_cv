@@ -547,57 +547,7 @@ html.js-views .view.is-active {
   font-size: 11px;
 }
 
-/* ---------- Timeline (work experience) ---------- */
-.timeline {
-  border-top: 1px solid var(--line);
-}
-.timeline-entry {
-  position: relative;
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 28px;
-  padding: 30px 24px 30px 0;
-  border-bottom: 1px solid var(--line);
-}
-.timeline-marker {
-  position: absolute;
-  inset-inline-start: 0;
-  top: 40px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--accent);
-}
-.timeline-date {
-  padding-top: 2px;
-  color: var(--muted);
-  font-size: 12px;
-}
-.timeline-detail h3 {
-  margin-bottom: 6px;
-  font-size: 17px;
-  font-weight: 600;
-}
-.timeline-detail h3 span {
-  color: #756f63;
-  font-weight: 400;
-}
-.timeline-location {
-  margin-bottom: 12px;
-  color: var(--muted);
-  font-size: 12px;
-}
-.timeline-location span {
-  padding-inline: 3px;
-}
-.timeline-detail > p:not(.timeline-location) {
-  max-width: 680px;
-  margin-bottom: 16px;
-  color: var(--ink-2);
-  font-size: 13px;
-  line-height: 1.9;
-}
-
+/* ---------- Tag list ---------- */
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -733,75 +683,6 @@ html.js-views .view.is-active {
   font-weight: 600;
 }
 
-.project-list {
-  display: grid;
-  gap: 54px;
-}
-.project-row {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: clamp(20px, 4vw, 48px);
-  align-items: center;
-  padding-top: 26px;
-  border-top: 1px solid var(--line);
-}
-.project-row .project-image {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  background: var(--paper-2);
-}
-.project-row .project-image img {
-  width: 100%;
-  aspect-ratio: 1.5 / 1;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-a.project-image:hover img {
-  transform: scale(1.02);
-}
-.project-title-row {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 14px;
-}
-.project-title-row h3 {
-  font-size: 19px;
-  font-weight: 600;
-}
-.project-type {
-  color: var(--muted);
-  font-size: 11px;
-  white-space: nowrap;
-}
-.project-info > p {
-  margin: 10px 0 16px;
-  color: var(--ink-2);
-  font-size: 13px;
-  line-height: 1.85;
-}
-.project-site-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  margin-top: 16px;
-  padding: 9px 14px;
-  border: 1px solid var(--ink);
-  color: var(--ink);
-  font-size: 12px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.16s ease, color 0.16s ease;
-}
-.project-site-link:hover {
-  background: var(--ink);
-  color: var(--paper);
-}
-.project-site-link i {
-  font-size: 10px;
-}
-
 /* ---------- Packages ---------- */
 .package-grid {
   display: grid;
@@ -821,16 +702,8 @@ a.project-image:hover img {
   background: var(--paper-2);
   box-shadow: 0 10px 28px rgb(28 31 29 / 6%);
 }
-.package-kicker {
-  color: var(--muted);
-  font-size: 11px;
-  font-weight: 600;
-}
-.package-card--featured .package-kicker {
-  color: var(--accent-deep);
-}
 .package-card h3 {
-  margin: 6px 0 10px;
+  margin: 0 0 10px;
   font-size: 21px;
   font-weight: 700;
 }
@@ -906,6 +779,59 @@ a.project-image:hover img {
 }
 .package-included i {
   margin-top: 7px;
+  color: var(--ok);
+  font-size: 11px;
+}
+
+/* ---------- Aftercare (support) ---------- */
+.care-card {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(24px, 5vw, 56px);
+  margin-top: 44px;
+  padding: clamp(24px, 4vw, 38px);
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+}
+.care-eyebrow {
+  margin-bottom: 10px;
+  color: var(--accent-deep);
+  font-size: 11px;
+  font-weight: 600;
+}
+.care-copy h3 {
+  margin-bottom: 14px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.care-copy p {
+  max-width: 520px;
+  margin-bottom: 12px;
+  color: var(--ink-2);
+  font-size: 13.5px;
+  line-height: 1.95;
+}
+.care-copy p:last-child {
+  margin-bottom: 0;
+}
+.care-list {
+  display: grid;
+  align-content: center;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.care-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--ink-2);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.care-list i {
+  margin-top: 6px;
   color: var(--ok);
   font-size: 11px;
 }
@@ -1401,7 +1327,8 @@ a.project-image:hover img {
 
   .home-grid,
   .about-grid,
-  .contact-grid {
+  .contact-grid,
+  .care-card {
     grid-template-columns: 1fr;
     gap: 40px;
   }
@@ -1442,24 +1369,6 @@ a.project-image:hover img {
   }
   .package-included {
     grid-template-columns: 1fr;
-  }
-
-  .project-row {
-    grid-template-columns: 1fr;
-  }
-
-  .timeline-entry {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-  .timeline-entry {
-    padding: 26px 20px 26px 0;
-  }
-  .timeline-marker {
-    top: 33px;
-  }
-  .timeline-detail {
-    padding-inline-start: 0;
   }
 
   .process-step {
