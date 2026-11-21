@@ -59,8 +59,6 @@
   const menuToggle = document.querySelector(".menu-toggle");
   const navigation = document.querySelector(".primary-nav");
   const backToTop = document.querySelector(".back-to-top-floating");
-  const contactForm = document.querySelector("#contact-form");
-  const formStatus = document.querySelector("#form-status");
 
   const closeMenu = () => {
     menuToggle.setAttribute("aria-expanded", "false");
@@ -78,7 +76,15 @@
     views.forEach((v) => {
       const active = v.id === id;
       v.classList.toggle("is-active", active);
-      v.setAttribute("aria-hidden", String(!active));
+      // Hidden panels are display:none, but `inert` also takes their links
+      // out of the tab order — without it the hidden CTA buttons stay focusable.
+      if (active) {
+        v.removeAttribute("aria-hidden");
+        v.removeAttribute("inert");
+      } else {
+        v.setAttribute("aria-hidden", "true");
+        v.setAttribute("inert", "");
+      }
     });
 
     navLinks.forEach((a) => {
@@ -169,19 +175,14 @@
   updateScroll();
   window.addEventListener("scroll", updateScroll, { passive: true });
 
-  // Contact form -> mail client
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    if (!contactForm.reportValidity()) return;
-
-    const data = new FormData(contactForm);
-    const name = data.get("name").toString().trim();
-    const email = data.get("email").toString().trim();
-    const message = data.get("message").toString().trim();
-    const subject = encodeURIComponent(`پیام از وب‌سایت: ${name}`);
-    const body = encodeURIComponent(`${message}\n\nنام: ${name}\nایمیل: ${email}`);
-
-    formStatus.textContent = "برنامهٔ ایمیل شما با پیام آماده باز می‌شود…";
-    window.location.href = `mailto:s.alikhodami@gmail.com?subject=${subject}&body=${body}`;
+  // FAQ uses native <details>; keep one answer open at a time.
+  const faqItems = Array.from(document.querySelectorAll(".faq-item"));
+  faqItems.forEach((item) => {
+    item.addEventListener("toggle", () => {
+      if (!item.open) return;
+      faqItems.forEach((other) => {
+        if (other !== item) other.open = false;
+      });
+    });
   });
 })();
